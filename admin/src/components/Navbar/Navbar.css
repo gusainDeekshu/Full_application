@@ -1,0 +1,19 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 4%;
+}
+.navbar .logo{
+    width: max(15%,80px);
+}
+.texth1{
+    position: absolute;
+    top: 0;
+    font-size: 2vw;
+    padding: 1vb ;
+}
+
+.navbar .profile{
+    width: 40px;
+}
