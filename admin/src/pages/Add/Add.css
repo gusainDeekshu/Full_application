@@ -1,40 +1,104 @@
-.add{
-    width: 70%;
-    margin-left: max(5vw,25px);
-    margin-top: 50px;
-    color: #6d6d6d;
-    font-size: 16px;
-}
-.add form{
-    gap: 20px;
-}
-.add-image-upload img{
-    width: 120px;
-cursor: pointer;
-
-}
-
-.add-product-name,.add-product-description{
-    width: max(40%,280px);
-}
-.add-product-name input,.add-product-description textarea{
-    padding: 10px;
-}
-
-.add-category-price{
+.add {
+    max-width: 50vw;
+    width: 50vw;
+    margin: auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .add p {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333;
     display: flex;
-    gap: 30px;
-}
-
-.add-category-price select ,.add-category-price input{
-    max-width: 120px;
-    padding: 10px;
-}
-.add-btn{
-    max-width: 120px;
-    border: none;
-    padding: 10px;
-    background-color: black;
-    color: white;
+    align-items: center;
+  }
+  
+  .add p i {
+    margin-right: 8px;
+    color: #00a651;
+  }
+  
+  .flex-col {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .add-image-upload img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
     cursor: pointer;
-}
+    border: 2px solid #00a651;
+  }
+  
+  .add-product-name input,
+  .add-product-description textarea,
+  .add-category select,
+  .add-price input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background-color: #ffffff;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .add-product-name input:focus,
+  .add-product-description textarea:focus,
+  .add-category select:focus,
+  .add-price input:focus {
+    border-color: #00a651;
+    box-shadow: 0 0 5px rgba(0, 166, 81, 0.5);
+  }
+  
+  .add-category-price {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .add-category,
+  .add-price {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .add-price {
+    margin-right: 0;
+  }
+  
+  .add-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #00a651;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .add-btn i {
+    margin-right: 8px;
+  }
+  
+  .add-btn:hover {
+    background-color: #008b43;
+    transform: scale(1.02);
+  }
+  
+  .add-btn:active {
+    background-color: #006c36;
+    transform: scale(0.98);
+  }
+  
